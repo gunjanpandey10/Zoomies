@@ -1,6 +1,6 @@
 import "./App.css";
 import {Route,BrowserRouter as Router,Routes} from 'react-router-dom';
-import Landing from "./pages/landing";
+import Landing from "./pages/Landing";
 import Authentication from "./pages/Authentication";
 import Home from "./pages/home";
 import { AuthProvider } from "./contexts/AuthContext";
