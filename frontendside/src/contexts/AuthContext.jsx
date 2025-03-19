@@ -1,16 +1,16 @@
- import axios from "axios";
- import httpStatus from "http-status";
- import { createContext, useContext, useState } from "react";
- import { useNavigate } from "react-router-dom";
- import server from "../environment";
+import axios from "axios";
+import httpStatus from "http-status";
+import { createContext, useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import server from "../environment";
 
- 
- 
-export const AuthContext=createContext({});
 
-const client= axios.create({
-    baseURL:`${server}/api/v1/users`
+export const AuthContext = createContext({});
+
+const client = axios.create({
+    baseURL: `${server}/api/v1/users`
 })
+
 
 export const AuthProvider = ({ children }) => {
 
@@ -85,18 +85,14 @@ export const AuthProvider = ({ children }) => {
     }
 
 
+    const data = {
+        userData, setUserData, addToUserHistory, getHistoryOfUser, handleRegister, handleLogin
+    }
 
-    
-
-     const data={
-        userData,setUserData,handleRegister,handleLogin,addToUserHistory,getHistoryOfUser
-     }
-
-
-
-     return (
+    return (
         <AuthContext.Provider value={data}>
-        {children} 
+            {children}
         </AuthContext.Provider>
-     )
+    )
+
 }
