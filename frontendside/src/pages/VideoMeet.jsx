@@ -473,7 +473,7 @@ export default function VideoMeetComponent() {
                     {showModal ? <div className={styles.chatRoom}>
 
                         <div className={styles.chatContainer}>
-                            <h1 className='fixed-top'>Chat</h1>
+                            <h1 className='sticky-top'>Chat</h1>
 
                             <div className=" chattingDisplay">
 
