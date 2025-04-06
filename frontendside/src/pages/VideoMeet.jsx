@@ -475,7 +475,7 @@ export default function VideoMeetComponent() {
                         <div className={styles.chatContainer}>
                             <h1>Chat</h1>
 
-                            <div className="fixed-top chattingDisplay">
+                            <div className=" chattingDisplay">
 
                                 {messages.length !== 0 ? messages.map((item, index) => {
 
