@@ -472,7 +472,7 @@ export default function VideoMeetComponent() {
 
                     {showModal ? <div className={styles.chatRoom}>
 
-                        <div className={styles.chatContainer}>
+                        <div className={styles.chatContainer} data-bs-spy="scroll">
                             <h1 className='sticky-top'>Chat</h1>
 
                             <div className=" chattingDisplay">
