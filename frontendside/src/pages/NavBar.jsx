@@ -1,6 +1,8 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
-export const NavBar = () => {
+
+export const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg border-bottom" style={{backgroundColor:"#FFF"}}>
     <div class="container p-2">
@@ -9,27 +11,30 @@ export const NavBar = () => {
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="right-cont">
        
         <form class="d-flex" role="search">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           
 
           <li class="nav-item">
-            <a class="nav-link active" href="/ab45">Join as Guest</a>
+            <Link class="nav-link active" to="/ab45">Join as Guest</Link>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" href="/auth">Login</a>
+            <Link class="nav-link active" to="/auth">Login</Link>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" href="/auth">Register</a>
+            <Link class="nav-link active" to="/auth">Register</Link>
           </li>
          
         </ul>
         </form>
+        </div>
       </div>
     </div>
   </nav>
   )
 }
+
