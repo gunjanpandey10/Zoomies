@@ -475,7 +475,7 @@ export default function VideoMeetComponent() {
                         <div className={styles.chatContainer}>
                             <h1>Chat</h1>
 
-                            <div className={styles.chattingDisplay}>
+                            <div className="overflow-auto chattingDisplay">
 
                                 {messages.length !== 0 ? messages.map((item, index) => {
 

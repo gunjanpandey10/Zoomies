@@ -58,9 +58,7 @@ font-family: sans-serif;
     height: 100%;
 }
 
-.chattingDisplay{
-    overflow: hidden;
-}
+
 
 .chattingArea {
     position: absolute;
