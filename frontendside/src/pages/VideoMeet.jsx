@@ -472,10 +472,10 @@ export default function VideoMeetComponent() {
 
                     {showModal ? <div className={styles.chatRoom}>
 
-                        <div className={styles.chatContainer} data-bs-spy="scroll">
+                        <div className={styles.chatContainer} id="display" >
                             <h1 className='sticky-top'>Chat</h1>
 
-                            <div className=" chattingDisplay">
+                            <div className=" chattingDisplay" data-bs-spy="scroll" data-bs-target="display">
 
                                 {messages.length !== 0 ? messages.map((item, index) => {
 
