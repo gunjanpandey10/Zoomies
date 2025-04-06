@@ -1,4 +1,8 @@
-.meetVideoContainer {
+
+*{
+font-family: sans-serif;
+
+}.meetVideoContainer {
     position: relative;
     height: 100vh;
     background: rgb(1, 4, 48);
@@ -54,10 +58,13 @@
     height: 100%;
 }
 
+.chattingDisplay{
+    overflow: hidden;
+}
 
 .chattingArea {
     position: absolute;
    bottom:0;
-   overflow: hidden;
+   
 }
 

@@ -6,19 +6,6 @@ import { NavBar } from "./NavBar";
 const Landing = () => {
   const router =useNavigate()
   return (
-    // <div className="landingPageContainer">
-    //   <nav>
-    //     <div className="navHeader"> <h2>Zoomiee</h2>     </div>
-    //     <div className="navlist">
-    //         <p onClick={()=>{
-    //          router("/ab45");
-    //         }}>Join as Guest</p>
-    //         <p onClick={()=>{router("/auth")}}>Register</p>
-    //         <div onClick={()=>{router("/auth")}}role="button"><p>Login</p></div>
-    //     </div>
-
-
-    //     </nav>  
 
       
 <>
@@ -34,7 +21,7 @@ const Landing = () => {
   <div><h1><span style={{color:"#FF9839"}}>Connect</span> with your Loved Ones</h1>
    <p>Cover a Distance by Zoomiee</p>
    <div role="button">
-    <Link to ={"/auth"} Get Started></Link>
+    <Link to ={"/auth"} >Get Started</Link>
    </div>
   </div>  
    <div>
