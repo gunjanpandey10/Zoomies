@@ -15,15 +15,15 @@ export const NavBar = () => {
           
 
           <li class="nav-item">
-            <Link class="nav-link active" to="/ab45">Join as Guest</Link>
+            <a class="nav-link active" href="/ab45">Join as Guest</a>
           </li>
 
           <li class="nav-item">
-            <Link class="nav-link active" to="/auth">Login</Link>
+            <a class="nav-link active" href="/auth">Login</a>
           </li>
 
           <li class="nav-item">
-            <Link class="nav-link active" to="/auth">Register</Link>
+            <a class="nav-link active" href="/auth">Register</a>
           </li>
          
         </ul>
