@@ -43,8 +43,8 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 10px;
 }
 
-.conferenceView  video:hover{
-    height:80%;
+.conferenceView  video:picture-in-picture{
+    height:100vh;
 }
 
 
