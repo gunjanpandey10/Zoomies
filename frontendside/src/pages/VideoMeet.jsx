@@ -490,6 +490,7 @@ export default function VideoMeetComponent() {
 
 
                             </div>
+                            </div>
 
                             <div className={styles.chattingArea}>
                                 <TextField value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" className='m-2' label="Enter Your chat" variant="outlined" />
@@ -497,7 +498,7 @@ export default function VideoMeetComponent() {
                             </div>
 
 
-                        </div>
+                       
                     </div> : <></>}
 
 

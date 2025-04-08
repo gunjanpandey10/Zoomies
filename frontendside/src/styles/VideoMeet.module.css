@@ -45,7 +45,7 @@ font-family: sans-serif;
 
 .chatRoom {
     position: absolute;
-    height:500px ;
+    height:600px ;
     right: 0;
     background: white;
     border-radius: 10px;
@@ -56,12 +56,14 @@ font-family: sans-serif;
 .chatContainer {
     position: relative;
     height: 90%;
-}
-
-.chattingDisplay{
     overflow-y: auto;
     max-height:75%;
 }
+
+/* .chattingDisplay{
+    overflow-y: auto;
+    max-height:75%;
+} */
 
 .chattingArea {
     position: absolute;
