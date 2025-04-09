@@ -447,7 +447,7 @@ export default function VideoMeetComponent() {
         getMedia();
     }
     function enterFullscreen() {
-        const element = document.documentElement;
+        const element = document.getElementById('fullscreen');
   
         if (element.requestFullscreen) {
           element.requestFullscreen();
@@ -552,7 +552,7 @@ export default function VideoMeetComponent() {
                     <div className={styles.conferenceView} id="fullvideo">
                         {videos.map((video) => (
                             <div key={video.socketId}>
-                                <video
+                                <video className='fullscreen'
 
                                     data-socket={video.socketId}
                                     ref={ref => {
