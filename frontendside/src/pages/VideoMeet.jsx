@@ -558,14 +558,13 @@ export default function VideoMeetComponent() {
                                     ref={ref => {
                                         if (ref && video.stream) {
                                             ref.srcObject = video.stream;
-                                            <i class="fa-solid fa-expand"></i>
                                         }
                                     }}
                                    
                                     autoPlay  
                                 >   
                                 </video>
-                               
+                                <i class="fa-solid fa-expand" onClick={enterFullscreen}></i>
                             </div>
 
                         ))}
