@@ -560,10 +560,13 @@ export default function VideoMeetComponent() {
                                             ref.srcObject = video.stream;
                                         }
                                     }}
+                                   
                                     autoPlay
+                                    
                                 >
-                                    <button onclick={enterFullscreen}type='button'>Enter Fullscreen</button>
-                                    <button onclick={exitFullscreen} type='button'>Exit Fullscreen</button>
+                                    <i class="fa-solid fa-expand"></i>
+
+                                   
                                 </video>
                             </div>
 
