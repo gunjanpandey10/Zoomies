@@ -552,7 +552,7 @@ export default function VideoMeetComponent() {
                     <div className={styles.conferenceView} id="fullvideo">
                         {videos.map((video) => (
                             <div key={video.socketId}>
-                                <video className='fullscreen'
+                                <video id='fullscreen'
 
                                     data-socket={video.socketId}
                                     ref={ref => {
