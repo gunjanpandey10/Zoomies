@@ -564,10 +564,11 @@ export default function VideoMeetComponent() {
                                     autoPlay
                                     
                                 >
-                                    <i class="fa-solid fa-expand"></i>
+                                    
 
                                    
                                 </video>
+                                <i class="fa-solid fa-expand"></i>
                             </div>
 
                         ))}
