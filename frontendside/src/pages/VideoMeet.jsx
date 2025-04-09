@@ -446,8 +446,19 @@ export default function VideoMeetComponent() {
         setAskForUsername(false);
         getMedia();
     }
-
-
+    const videoElement = document.getElementById('fullvideo');
+    function enterFullscreen() {
+        if (videoElement.requestFullscreen) {
+          videoElement.requestFullscreen();
+        } else if (videoElement.mozRequestFullScreen) { // Firefox
+          videoElement.mozRequestFullScreen();
+        } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+          videoElement.webkitRequestFullscreen();
+        } else if (videoElement.msRequestFullscreen) { // IE/Edge
+          videoElement.msRequestFullscreen();
+        }
+      }
+      videoElement.addEventListener('click', enterFullscreen);
     return (
         <div>
 
@@ -528,7 +539,7 @@ export default function VideoMeetComponent() {
 
                     <video className={styles.meetUserVideo} ref={localVideoref} autoPlay muted></video>
 
-                    <div className={styles.conferenceView}>
+                    <div className={styles.conferenceView} id="fullvideo">
                         {videos.map((video) => (
                             <div key={video.socketId}>
                                 <video
