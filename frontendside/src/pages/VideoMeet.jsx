@@ -446,19 +446,27 @@ export default function VideoMeetComponent() {
         setAskForUsername(false);
         getMedia();
     }
-    const videoElement = document.getElementById('fullvideo');
     function enterFullscreen() {
-        if (videoElement.requestFullscreen) {
-          videoElement.requestFullscreen();
-        } else if (videoElement.mozRequestFullScreen) { // Firefox
-          videoElement.mozRequestFullScreen();
-        } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
-          videoElement.webkitRequestFullscreen();
-        } else if (videoElement.msRequestFullscreen) { // IE/Edge
-          videoElement.msRequestFullscreen();
+        const element = document.documentElement;
+  
+        if (element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if (element.webkitRequestFullscreen) {
+          element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) {
+          element.msRequestFullscreen();
         }
       }
-      videoElement.addEventListener('click', enterFullscreen);
+  
+      function exitFullscreen() {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      }
     return (
         <div>
 
@@ -537,7 +545,10 @@ export default function VideoMeetComponent() {
                     </div>
 
 
-                    <video className={styles.meetUserVideo} ref={localVideoref} autoPlay muted></video>
+                    <video className={styles.meetUserVideo} ref={localVideoref} autoPlay muted>
+                    <button onclick="enterFullscreen()">Enter Fullscreen</button>
+                    <button onclick="exitFullscreen()">Exit Fullscreen</button>
+                    </video>
 
                     <div className={styles.conferenceView} id="fullvideo">
                         {videos.map((video) => (
