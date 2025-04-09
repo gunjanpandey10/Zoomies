@@ -546,8 +546,8 @@ export default function VideoMeetComponent() {
 
 
                     <video className={styles.meetUserVideo} ref={localVideoref} autoPlay muted>
-                    <button onclick="enterFullscreen()">Enter Fullscreen</button>
-                    <button onclick="exitFullscreen()">Exit Fullscreen</button>
+                    <button onclick={enterFullscreen}>Enter Fullscreen</button>
+                    <button onclick={exitFullscreen}>Exit Fullscreen</button>
                     </video>
 
                     <div className={styles.conferenceView} id="fullvideo">
