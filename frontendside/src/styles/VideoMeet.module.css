@@ -43,6 +43,9 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 10px;
 }
 
+#fullscreen{
+    object-fit: cover;
+}
 
 
 .chatRoom {
